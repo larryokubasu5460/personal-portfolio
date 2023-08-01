@@ -30,7 +30,7 @@ export const NavBar = () => {
 
     const handleMailToClick = () => {
       const email = 'larryokubasu3@gmail.com';
-      window.location.href = `mailto:${email}`;
+      window.open(`mailto:${email}`,'_blank');
     }
     return (
         <Navbar expand="lg" className={scrolled ? "scrolled" : "" }>

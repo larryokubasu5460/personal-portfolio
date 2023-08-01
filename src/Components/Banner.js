@@ -44,7 +44,7 @@ export const Banner = () =>{
 
     const handleMailToClick = () =>{
         const email = 'larryokubasu3@gmail.com';
-        window.location.href=`mailto:${email}`;
+        window.open(`mailto:${email}`,'_blank');
         
     }
     return (
