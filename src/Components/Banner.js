@@ -10,7 +10,7 @@ import TrackVisibility from 'react-on-screen';
 export const Banner = () =>{
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Software Dev", "FrontEnd Engineer", "Backend Engineer"];
+    const toRotate = ["Software Dev", "Backend Engineer", "FrontEnd Engineer"];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300-Math.random()*100);
     const period = 2000;
@@ -41,6 +41,12 @@ export const Banner = () =>{
             setDelta(500);
         }
     }
+
+    const handleMailToClick = () =>{
+        const email = 'larryokubasu3@gmail.com';
+        window.location.href=`mailto:${email}`;
+        
+    }
     return (
         <section className="banner" id="home">
             <Container>
@@ -51,9 +57,13 @@ export const Banner = () =>{
                             <div className={isVisible ? "animate__animated animate__fadeIn":""}>
                                 <span className='tagline'>Welcome to my Portfolio
                                 </span>
-                                <h1>{`Hi I'm Standish `}<span className="wrap">{text}</span></h1>
-                                <p>Lorem ipsum Lorem consectetur amet eu esse aliquip ut laboris enim aute anim. Pariatur velit nostrud pariatur esse Lorem dolor laborum ipsum dolor ex duis ullamco irure. Esse aute non ea sunt.</p>
-                                <button onClick={()=>console.log('connect')}>Let's Connect <ArrowRightCircle size={25}/></button>
+                                <h1>{`Hi I'm Larry `}<span className="wrap">{text}</span></h1>
+                                <p>I am a seasoned Software Developer with a proven track record of designing and crafting efficient, 
+                                    high-performance applications, while excelling in software testing and system maintenance. My skill 
+                                    set is both diverse and promising, allowing me to tackle a wide range of challenges with confidence 
+                                    and innovation.
+                                </p>
+                                <button onClick={handleMailToClick}>Let's Connect <ArrowRightCircle size={25}/></button>
                             </div>}
                         </TrackVisibility>
                     </Col>

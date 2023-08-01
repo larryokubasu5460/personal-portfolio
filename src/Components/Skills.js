@@ -39,35 +39,63 @@ export const Skills = () => {
                         <h2>
                             Skills 
                         </h2>
-                        <p>Culpa qui fugiat excepteur aute ut amet.Excepteur ad dolor aliquip consectetur. Duis aliqua consectetur consectetur esse nisi. Et quis sint aliquip ad ullamco ipsum eu nostrud cillum excepteur id. Do incididunt elit enim sunt laboris. Est pariatur anim fugiat reprehenderit proident do velit consequat ullamco occaecat laboris. Fugiat in dolore exercitation cupidatat et commodo pariatur elit do ex fugiat consectetur ad ad. Ipsum culpa esse ad aute anim non non commodo.</p>
+                        <p>Highly proficient across multiple platforms, languages, and frameworks, I possess a wealth of experience in utilizing cutting-edge development tools and procedures. Whether working independently on projects or collaborating seamlessly within a productive team, I demonstrate effective self-management and an unwavering commitment to success.</p>
                         <Carousel responsive={responsive} infinite={true} className='skill-slider'>
                             <div className='item'>
-                                <img src={meter1} alt="" />
-                                <h5>UI Development</h5>
+                                <img src={meter1} alt="Rest APIs" />
+                                <h5>RESTful APIs</h5>
                             </div>
                             <div className='item'>
-                                <img src={meter2} alt="" />
-                                <h5>API Development</h5>
+                                <img src={meter1} alt="attachment" />
+                                <h5>PHP Slim</h5>
                             </div>
                             <div className='item'>
-                                <img src={meter3} alt="" />
-                                <h5>Database Development</h5>
+                                <img src={meter3} alt="Spring boot" />
+                                <h5>Java SpringBoot</h5>
                             </div>
                             <div className='item'>
-                                <img src={meter2} alt="" />
-                                <h5>Documentation </h5>
+                                <img src={meter3} alt="attachment" />
+                                <h5>Git/Bitbucket</h5>
+                            </div>
+                  
+                            <div className='item'>
+                                <img src={meter2} alt="JPA" />
+                                <h5>JPA/Hibernate</h5>
                             </div>
                             <div className='item'>
-                                <img src={meter1} alt="" />
-                                <h5>Web Design</h5>
+                                <img src={meter1} alt="SQL" />
+                                <h5>SQL/MYSQL</h5>
                             </div>
-                
+                            <div className='item'>
+                                <img src={meter1} alt="Eloquent" />
+                                <h5>Eloquent</h5>
+                            </div>
+                            <div className='item'>
+                                <img src={meter2} alt="React" />
+                                <h5>ReactJs</h5>
+                            </div>
+                            <div className='item'>
+                                <img src={meter2} alt="C#" />
+                                <h5>C# ASP.NET</h5>
+                            </div>
+                            <div className='item'>
+                                <img src={meter2} alt="Python" />
+                                <h5>Python</h5>
+                            </div>
+                            <div className='item'>
+                                <img src={meter1} alt="Documentation" />
+                                <h5>Documentation</h5>
+                            </div>
+                            <div className='item'>
+                                <img src={meter1} alt="Project Management" />
+                                <h5>Project Management</h5>
+                            </div>
                         </Carousel>
                     </div>
                     </Col>
                 </Row>
             </Container>
-            <img className='background-image-left' src={colorSharp}/>
+            <img className='background-image-left' src={colorSharp} alt='attachment'/>
         </section>
     )
 }

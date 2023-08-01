@@ -11,19 +11,14 @@ import TrackVisibility from 'react-on-screen';
 export const Projects = () => {
     const projects = [
         {
-            title: "Business Startup",
-            description: "Design & Development",
+            title: "My Spaces Startup",
+            description: "Rental Management System",
             imgUrl : projImg1
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
+            title: "Architecture & Design Startup",
+            description: "Design & Development of Amazing Architecture",
             imgUrl : projImg2
-        },
-        {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl : projImg3
         },
         {
             title: "Business Startup",
@@ -40,7 +35,7 @@ export const Projects = () => {
                         {({isVisible})=>
                             <div className={isVisible ? "animate__animated animate__bounce":""}>
                                 <h2>Projects</h2>
-                                <p>Nostrud esse enim ea nulla dolore exercitation tempor incididunt. Nulla sint cillum fugiat adipisicing pariatur esse velit exercitation est ipsum. Exercitation occaecat adipisicing sunt aliquip tempor laboris voluptate Lorem consectetur cupidatat pariatur ex sit.</p>
+                                <p>I am committed to spearheading transformative projects that harness cutting-edge technologies and methodologies. Proficient across diverse platforms, languages, and frameworks, I craft efficient and high-performance solutions that conquer complex challenges. Whether collaborating with dynamic teams or working independently, I strive to surpass expectations and drive project success.</p>
                             </div>}
                     </TrackVisibility>
                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
@@ -81,7 +76,7 @@ export const Projects = () => {
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-right" src={colorSharp2}></img>
+            <img className="background-image-right" src={colorSharp2} alt='attachment'></img>
         </section>
   )  
 
